@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body>p {
+  height: 30px;
+}
+
+div {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#loginForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+.hide {
+  display: none;
+}
+
+#loginForm {
+  padding: 30px;
+  text-align: center;
+}
+
+#loginForm p {
+  margin: 10px 0;
+}
+
+#loginForm input[type="text"] {
+  display: block;
+  margin: 0 auto;
+}
+
+#loginForm input[type="button"] {
+  float: right;
+}
+
+/*#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}*/
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+.users {
+  overflow: auto;
+  width: 25%;
+  height: 100%;
+}
+
+#userList li {
+  font-weight: bold;
+}
+
+#userList p {
+  font-style: italic;
+}
+
+#userList span {
+  color: green;
+}
+
+#chat_window {
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+#messages > div:nth-child(2n) {
+  background-color: rgba(0,0,0,0.05);
+}
+
+#messages > div:nth-child(2n+1) {
+  background-color: rgba(0,0,0,0.15);
+}
+
+#message_text {
+  /*display: block;*/
+  padding: 10px;
+  width: 200px;
+  height: 10px;
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
